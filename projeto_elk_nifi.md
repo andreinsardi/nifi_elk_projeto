@@ -42,7 +42,7 @@ docker-compose -version
 ## Baixando o repositorio do curso:
 Agora vamos fazer o download dos arquivos do curso para podermos dar inicio a criação do ambiente, vamos baixar via Git:
 ```
-git clone https://github.com/andreinsardi/aula_nifi_elk.git
+git clone https://github.com/andreinsardi/nifi_elk_projeto.git
 ```
 
 O clone desse repositorio vai baixar a pasta nifi_elk_projeto onde contem a pastas compose, vamos entrar na pasta compose.

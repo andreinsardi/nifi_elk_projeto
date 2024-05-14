@@ -89,10 +89,8 @@ O template está na pasta templates e vamos fazer a importação dele da seguint
 http://ipvm:8080
 ```
 Agora entramos em upload template:<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/265D64CE-A3B5-4E57-8762-F432BCF6AC10_4_5005_c.jpeg)
 
 Depois clicamos em select e depois em upload:<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/A784D852-5D09-4256-B984-98F8EFFF402B_4_5005_c.jpeg)
 
 Agora com o template importado quando vamos no menu superior principal e arrastamos o icone do template para o Flow ele mostra a opção mapa_covid. Só dar OK e está importado.
 
@@ -126,10 +124,8 @@ Feito isso a pagina do PGadmin4 vai ser aberta solicitando o login (caso não te
 * **Senha:** root
 
 Logue na pagina do PGAdmin4:<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/30965F19-7579-48E2-BFA9-93837D8D3C54.jpeg)
 
 Após logado vá em servers e adicione um novo server:<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/C8675E38-8EDA-4934-B5DE-D2CDA524F324_4_5005_c.jpeg)
 
 Feito isso você será levado a pagina inicial do PGAmin4 onde vamos cadastrar um novo servidor, entre com os dados abaixo (caso não tenha alterado no compose também):
 * **Nome:** Projetao
@@ -138,13 +134,10 @@ Feito isso você será levado a pagina inicial do PGAmin4 onde vamos cadastrar u
 * **Senha:** root 
 
 Agora adicione projetão no nome do server:<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/28F2073D-7284-4080-8961-B86E01E30E3A.jpeg)
 
 Após isso colocar o host como postgres(pois é o nome do container e eles se resolvem):<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/408D3B24-6C6B-4F65-BC8A-8EA10FABBE25.jpeg)
 
 Feito isso já temos o servidor configurado, clicamos no database e na aba lá em cima clicamos em "Query Tool" para importar e executar a nossa query.<br>
-![](https://github.com/andreinsardi/nifi_elk_projeto/blob/master/passoapasso/57F3FFFE-5BDC-40D0-924E-6EA6FE1149F1.jpeg)
 
 Importar o arquivo estrutura_postgres.sql citado acima, o mesmo se encontra no diretorio nifi_elk_projeto/scripts/
 
@@ -180,7 +173,6 @@ Nessa API tem exatamente os mesmos campos da tabela do Postgres, covid_casos, ma
 Outro ponto de atenção é que pra fins didáticos, estou usando um processor pra cada page do API, mas é possivel usar um processor que faz o count das paginas pra mim e eu use um só, caso queira fazer isso como desafio, fique a vontade.
 
 O desenho de como vai ficar o processo é mais ou menos o seguinte:<br>
-![](https://github.com/AnselmoBorges/nifi_elk_projeto/blob/master/passoapasso/IMG_0171.PNG)
 
 Fontes:
 * Dados da API

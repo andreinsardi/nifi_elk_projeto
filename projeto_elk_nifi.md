@@ -24,11 +24,11 @@ Quais os pré requisitos para a criação desse ambiente:
 Para instalar todos os pré reqs citados acima rode os comandos abaixo:
 
 ```
-sudo sudo update -y
-sudo sudo install docker git -y
-sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo apt-get upgrade
+sudo apt-get update
+sudo curl -fsSL https://get.docker.com | bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
 Com tudo instalado validamos o docker compose:

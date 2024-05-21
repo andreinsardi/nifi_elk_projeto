@@ -113,6 +113,7 @@ Também vamos criar a seguinte estrutura no Potgres:
 * **Criar o Schema covid:** O Schema no postgres é um conjunto lógico que contem os dados como tabelas, views, procedures e etc.
 * **Criar as 2 tabelas usadas no postgres** Nesse passo vamos criar a tabela covid_dados e a covid_ibge, cujo a criação dessa estrutura está no arquivo.sql que está no repositorio Git que baixamos a pouco no diretório nifi_elk_projeto/script/estrutura_postgres.sql.
 
+### PDF na pasta passoa passo (para auxiliar com imagens):
 
 ### Criando a estrutura Postgres via PGAdmin4:
 Vamos entrar via navegador no endereço abaixo:

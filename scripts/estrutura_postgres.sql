@@ -39,6 +39,7 @@ ALTER TABLE covid.covid_casos
     OWNER to postgres;
 
 -- Realizar a criacao da tabela consolidada pela data:
+-- Codigo para rodar dentro do Nifi:
 create table covid.consolidada_3103 as
 select 
 	covid_casos.date, 
